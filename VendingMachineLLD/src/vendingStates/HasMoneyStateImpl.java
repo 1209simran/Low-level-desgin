@@ -1,6 +1,5 @@
 package vendingStates;
 
-
 import model.Coin;
 import model.Product;
 import model.VendingMachine;
@@ -8,7 +7,6 @@ import model.VendingMachine;
 import java.util.List;
 
 public class HasMoneyStateImpl implements StateManager {
-
 
     public HasMoneyStateImpl() {
         System.out.println("Currently Vending machine is in HasMoneyState");
@@ -45,11 +43,6 @@ public class HasMoneyStateImpl implements StateManager {
         machine.setVendingMachineState(new IdleStateImpl(machine));
         return machine.getCoinList();
 
-    }
-
-    @Override
-    public void updateInventory(VendingMachine machine, Product product, int productCode) throws Exception {
-        throw new Exception("you can not update inventory in hasMoney  state");
     }
 
     @Override

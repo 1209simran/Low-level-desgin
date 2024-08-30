@@ -1,2 +1,7 @@
-package enums;public class State {
+package enums;
+
+public enum State {
+    MOVING,
+    IDLE,
+    STOPPED
 }

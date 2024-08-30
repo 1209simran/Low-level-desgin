@@ -22,6 +22,4 @@ public interface StateManager {
 
     public List<Coin> refundFullMoney(VendingMachine machine) throws Exception;
 
-    public void updateInventory(VendingMachine machine, Product product, int productCode) throws Exception;
-
 }

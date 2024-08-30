@@ -1,6 +1,5 @@
 package vendingStates;
 
-
 import model.Coin;
 import model.Product;
 import model.VendingMachine;
@@ -8,7 +7,6 @@ import model.VendingMachine;
 import java.util.List;
 
 public class DispenseProductStateImpl implements StateManager {
-
 
     public DispenseProductStateImpl() {
         System.out.println("Currently Vending machine is in Product Selection State");
@@ -57,11 +55,5 @@ public class DispenseProductStateImpl implements StateManager {
         machine.setVendingMachineState(new IdleStateImpl(machine));
         return product;
     }
-
-    @Override
-    public void updateInventory(VendingMachine machine, Product product, int productCode) throws Exception {
-        throw new Exception("inventory can not be updated in Dispense state");
-    }
-
 
 }

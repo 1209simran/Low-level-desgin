@@ -1,6 +1,5 @@
 package vendingStates;
 
-
 import model.Coin;
 import model.Product;
 import model.VendingMachine;
@@ -18,7 +17,6 @@ public class IdleStateImpl implements StateManager {
         System.out.println("Currently Vending machine is in IdleState");
         machine.setCoinList(new ArrayList<>());
     }
-
 
     @Override
     public void insertCoins(VendingMachine vendingMachine, Coin coin) throws Exception {
@@ -48,11 +46,6 @@ public class IdleStateImpl implements StateManager {
     @Override
     public List<Coin> refundFullMoney(VendingMachine machine) throws Exception {
         throw new Exception("Money has not been inserted");
-    }
-
-    @Override
-    public void updateInventory(VendingMachine machine, Product product, int productCode) throws Exception {
-        machine.getInventory().addProduct(product);
     }
 
     @Override

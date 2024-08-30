@@ -1,2 +1,6 @@
-package enums;public enum Direction {
+package enums;
+
+public enum Direction {
+
+    UP, DOWN
 }
